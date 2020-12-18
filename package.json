@@ -18,7 +18,7 @@
     "generator"
   ],
   "dependencies": {
-    "jimp": "^0.2.27"
+    "jimp": "0.16.1"
   },
   "repository": {
     "type": "git",

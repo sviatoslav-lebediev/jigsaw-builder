@@ -25,12 +25,12 @@ Jimp.read(filename, function (err, img) {
     var height = img.bitmap.height
     var scale = 1
 
-    if (width*scale > max_width) {
-      scale = max_width/width
-    }
-    if (height*scale > max_height) {
-      scale = max_height/heigth
-    }
+    // if (width*scale > max_width) {
+    //   scale = max_width/width
+    // }
+    // if (height*scale > max_height) {
+    //   scale = max_height/height
+    // }
 
     img.resize(width*scale, height*scale)
       .quality(60)
@@ -67,7 +67,7 @@ function run() {
       console.log("Finished with error: ")
       return console.log(err)
     }
-    
+
     console.log("Success! Check the jigsaw/ directory for the pieces.")
     console.log("Open the index.html file to check it has worked.")
   })

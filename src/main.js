@@ -69,10 +69,10 @@ function build(options, callback) {
     }
 
     // write the properties file
-    fs.writeFile(
+    fs.writeFileSync(
       destinationDir+"properties.json",
       JSON.stringify(properties,null,2),
-      "utf-8"
+      {encoding: "utf-8"}
     );
 
     // create an array of promises to fulfill when all the pieces
